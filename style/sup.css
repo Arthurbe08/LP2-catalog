@@ -1,0 +1,210 @@
+
+/*main section*/
+.sup-separator {
+    display: grid;
+    grid-template-columns: 60% 35%;
+    flex-direction: row;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/*intro / left section*/
+.sup-intro {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(16, 27, 53, 0.25),
+            rgba(16, 27, 53, 0.75)
+        ),
+        url("../images/celeste-mountain-bg.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.sup-intro-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+    color: #F1DFAE;
+}
+
+.sup-intro-text h1 {
+    font-size: 2.8rem;
+    color: #F2C94C;
+    margin-bottom: 2.5rem;
+
+    text-shadow: 2px 3px 5px #101B35;
+}
+
+.sup-intro-text p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin: 0.8rem 0;
+
+    text-shadow: 2px 2px 5px #101B35;
+}
+
+/*berry*/
+.sup-berry {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    width: 75px;
+    height: auto;
+
+    image-rendering: pixelated;
+    z-index: 2;
+}
+
+.sup-strawberry {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+
+    width: 48px;
+    height: auto;
+
+    image-rendering: pixelated;
+    opacity: 0.8;
+}
+
+/*form*/
+.sup-form-container {
+    flex: 1;
+    scale: 1.25;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: #101B35;
+}
+
+/* Form heading */
+
+.sup-form-container h1 {
+    font-size: 2.8rem;
+    color: #F2C94C;
+    margin-bottom: 0.8rem;
+}
+
+.sup-form-container > p {
+    color: #B8C7DA;
+    font-size: 1.05rem;
+    margin-bottom: 2.5rem;
+}
+
+/*form elements*/
+
+.sup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    max-width: 420px;
+
+    gap: 1rem;
+}
+
+.sup-form input {
+    width: 100%;
+    padding: 1rem 1.2rem;
+
+    background-color: #243F69;
+    border: 1px solid #3E75A8;
+    border-radius: 8px;
+
+    color: #F1DFAE;
+    font-family: inherit;
+    font-size: 1rem;
+
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.sup-form input::placeholder {
+    color: #B8C7DA;
+}
+
+.sup-form input:focus {
+    outline: none;
+    border-color: #F2C94C;
+
+    box-shadow: 0 0 0 3px rgba(242, 201, 76, 0.15);
+}
+
+/*submit*/
+.sup-form button {
+    width: 100%;
+    padding: 1rem;
+
+    background-color: #D6A84B;
+    color: #101B35;
+
+    border: none;
+    border-radius: 8px;
+
+    font-family: inherit;
+    font-size: 1.05rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s,
+        transform 0.2s,
+        box-shadow 0.2s;
+}
+
+.sup-form button:hover {
+    background-color: #F1DFAE;
+    transform: translateY(-2px);
+    
+    box-shadow: 0 5px 15px rgba(214, 168, 75, 0.2);
+}
+
+.sup-form button:active {
+    transform: translateY(0);
+}
+
+/*redirect*/
+
+.sup-redirect {
+    margin-top: 1.2rem;
+
+    color: #B8C7DA;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.sup-redirect a {
+    color: #D6A84B;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    transition: color 0.2s;
+}
+
+.sup-redirect a:hover {
+    color: #F1DFAE;
+    text-decoration: underline;
+}

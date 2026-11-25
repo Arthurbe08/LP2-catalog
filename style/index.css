@@ -1,0 +1,341 @@
+/* MAIN */
+
+.index-main {
+    min-height: calc(100vh - 75px);
+    padding: 3rem 8%;
+    background: #162541;
+}
+
+
+/* ADD MAP */
+.add-map {
+    display: inline-block;
+
+    padding: 0.9rem 1.5rem;
+    margin-bottom: 2.5rem;
+
+    background-color: #D6A84B;
+    color: #101B35;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.add-map:hover {
+    background-color: #F1DFAE;
+    transform: translateY(-2px);
+}
+
+
+/* CATALOG HEADER */
+
+
+.catalog {
+    width: 100%;
+}
+
+.catalog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    margin-bottom: 2rem;
+}
+
+.catalog-header h2 {
+    color: #F2C94C;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.catalog-header p {
+    color: #B8C7DA;
+}
+
+.catalog-header input {
+    width: 280px;
+    padding: 0.9rem 1rem;
+
+    background-color: #243F69;
+    border: 1px solid #3E75A8;
+    border-radius: 8px;
+
+    color: #F1DFAE;
+    font-size: 1rem;
+}
+
+.catalog-header input::placeholder {
+    color: #B8C7DA;
+}
+
+.catalog-header input:focus {
+    outline: none;
+    border-color: #D6A84B;
+}
+
+
+/* MAP LIST */
+
+.map-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,
+            minmax(260px, 1fr));
+
+    gap: 1.5rem;
+}
+
+
+
+/* MAP CARD */
+
+.map-card {
+    padding: 1.5rem;
+
+    background-color: #243F69;
+    border: 1px solid #3E75A8;
+    border-radius: 12px;
+
+    color: #F1DFAE;
+
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.map-card:hover {
+    transform: translateY(-4px);
+    border-color: #D6A84B;
+}
+
+.map-card h3 {
+    color: #F2C94C;
+    font-size: 1.4rem;
+    margin: 0.8rem 0;
+}
+
+.map-username {
+    color: #B8C7DA;
+    font-size: 0.9rem;
+}
+
+.map-description {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.map-card>p:not(.map-description):not(.map-username) {
+    margin-top: 0.5rem;
+}
+
+
+
+/* COLLECTABLES */
+
+.map-collectables {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+
+    margin-top: 1.2rem;
+}
+
+.collectable {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    padding: 0.5rem;
+
+    background-color: #162541;
+    border-radius: 6px;
+
+    font-size: 0.85rem;
+}
+
+.collectable img {
+    width: 28px;
+    height: 28px;
+
+    object-fit: contain;
+    image-rendering: pixelated;
+}
+
+
+
+/* EMPTY STATE */
+
+.empty-message {
+    grid-column: 1 / -1;
+
+    padding: 4rem 1rem;
+
+    text-align: center;
+    color: #B8C7DA;
+
+    background-color: #243F69;
+    border: 1px dashed #3E75A8;
+    border-radius: 12px;
+}
+
+/* Catalog heading and Add Map button */
+
+.catalog-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.catalog-top h2 {
+    color: #F2C94C;
+    font-size: 1.8rem;
+    margin-bottom: .4rem;
+}
+
+.catalog-top p {
+    color: #B8C7DA;
+    font-size: .95rem;
+}
+
+.add-map {
+    padding: .7rem 1.2rem;
+    background: #D6A84B;
+    color: #101B35;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: .2s;
+}
+
+.add-map:hover {
+    background: #F1DFAE;
+    transform: translateY(-2px);
+}
+
+/* Search bar */
+
+.catalog-toolbar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1.5rem;
+}
+
+#username-search {
+    width: 280px;
+    max-width: 100%;
+    padding: .75rem 1rem;
+    background: #101B35;
+    border: 1px solid #3E75A8;
+    border-radius: 7px;
+    color: #F1DFAE;
+    outline: none;
+}
+
+#username-search:focus {
+    border-color: #D6A84B;
+}
+
+/* Achievement grid */
+
+.map-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.2rem;
+    align-items: stretch;
+}
+
+/* Achievement card */
+
+.map-card {
+    display: flex;
+    flex-direction: column;
+    gap: .65rem;
+    padding: 1.2rem;
+    background: #243F69;
+    border: 1px solid #3E75A8;
+    border-radius: 10px;
+    transition: .2s;
+    min-width: 0;
+}
+
+.map-card:hover {
+    transform: translateY(-3px);
+    border-color: #D6A84B;
+}
+
+.map-card h3 {
+    color: #F2C94C;
+    font-size: 1.2rem;
+    overflow-wrap: anywhere;
+}
+
+.map-username {
+    color: #B8C7DA;
+    font-size: .8rem;
+}
+
+.map-description {
+    color: #F1DFAE;
+    font-size: .9rem;
+    line-height: 1.4;
+}
+
+.map-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    color: #B8C7DA;
+    font-size: .8rem;
+}
+
+.map-details span {
+    background: #101B35;
+    padding: .35rem .55rem;
+    border-radius: 5px;
+}
+
+/* Collectables */
+
+.map-collectables {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-top: .2rem;
+}
+
+.collectable {
+    display: flex;
+    align-items: center;
+    gap: .35rem;
+    padding: .35rem .5rem;
+    background: #101B35;
+    border-radius: 5px;
+    color: #F1DFAE;
+    font-size: .75rem;
+}
+
+.collectable img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    image-rendering: pixelated;
+}
+
+/* Empty catalog message */
+
+.empty-message {
+    grid-column: 1 / -1;
+    padding: 2.5rem 1rem;
+    text-align: center;
+    color: #B8C7DA;
+    background: #243F69;
+    border: 1px dashed #3E75A8;
+    border-radius: 10px;
+}
+
+

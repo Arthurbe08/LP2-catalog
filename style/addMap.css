@@ -1,0 +1,312 @@
+
+ 
+/* PAGE */
+
+
+.cancel-button{
+
+    padding: 0.9rem 1.5rem;
+    font-size: 1rem;
+
+    background-color: #D6A84B;
+    color: #101B35;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.cancel-button:hover{
+    background-color: #F1DFAE;
+    transform: translateY(-2px);
+}
+
+.add-map-subtitle {
+    color: #B8C7DA;
+    margin-top: 0.5rem;
+}
+
+
+ 
+/* FORM FIELDS */
+ 
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+
+    min-width: 0;
+}
+
+.form-field label {
+    color: #B8C7DA;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    padding: 0.7rem 0.8rem;
+
+    background: #101B35;
+    border: 1px solid #3E75A8;
+    border-radius: 6px;
+
+    color: #F1DFAE;
+    font-family: Georgia, serif;
+    font-size: 0.9rem;
+}
+
+.form-field textarea {
+    resize: vertical;
+    line-height: 1.5;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+    color: #8296B2;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+    outline: none;
+    border-color: #D6A84B;
+}
+
+.form-field input[type="file"] {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+}
+
+.form-field input[type="file"]::file-selector-button {
+    padding: 0.4rem 0.6rem;
+    margin-right: 0.5rem;
+
+    background: #243F69;
+    border: 1px solid #3E75A8;
+    border-radius: 5px;
+
+    color: #F1DFAE;
+    cursor: pointer;
+}
+
+
+ 
+/* MAP INFORMATION */
+ 
+
+.add-map-overview {
+    align-items: stretch;
+}
+
+.add-map-overview .map-overview-description,
+.add-map-overview .map-overview-info {
+    justify-content: flex-start;
+    gap: 1.2rem;
+}
+
+
+ 
+/* SECTION HEADERS */
+ 
+
+.add-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+/* Add buttons */
+
+.add-item-button {
+    padding: 0.7rem 1rem;
+
+    background: #D6A84B;
+    border: none;
+    border-radius: 7px;
+
+    color: #101B35;
+    font-family: Georgia, serif;
+    font-weight: bold;
+
+    white-space: nowrap;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.add-item-button:hover {
+    background: #F1DFAE;
+    transform: translateY(-2px);
+}
+
+
+ 
+/* REMOVE BUTTON */
+ 
+
+.add-collectable-card,
+.add-challenge-card {
+    position: relative;
+}
+
+.remove-item-button {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.6rem;
+
+    width: 27px;
+    height: 27px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #101B35;
+    border: 1px solid #3E75A8;
+    border-radius: 5px;
+
+    color: #E59B9B;
+    font-size: 1.2rem;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.remove-item-button:hover {
+    background: #5A2938;
+    border-color: #E59B9B;
+    color: #FFBABA;
+}
+
+
+ 
+/* COLLECTABLE FORM */
+ 
+
+.add-collectable-card {
+    align-items: center;
+    padding: 1.5rem 1rem 1rem;
+}
+
+.add-collectable-card .collectable-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.add-collectable-card .collectable-image {
+    flex-shrink: 0;
+}
+
+.collectable-amount-fields {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: end;
+    gap: 0.6rem;
+}
+
+.collectable-amount-fields > span {
+    padding-bottom: 0.7rem;
+    color: #D6A84B;
+    font-weight: bold;
+}
+
+
+ 
+/* CHALLENGE FORM */
+ 
+
+.add-challenge-card {
+    padding: 1.5rem 1rem 1rem;
+}
+
+.challenge-form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.challenge-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+}
+
+
+/* Checkboxes and radio buttons */
+
+.challenge-form-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    padding-top: 0.8rem;
+    border-top: 1px solid #3E75A8;
+}
+
+.form-checkbox,
+.form-radio {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    color: #B8C7DA;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.form-checkbox input,
+.form-radio input {
+    accent-color: #D6A84B;
+    cursor: pointer;
+}
+
+
+ 
+/* FORM ACTIONS */
+ 
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+
+    padding-top: 1.5rem;
+    border-top: 1px solid #3E75A8;
+}
+
+.submit-map-button {
+    padding: 0.9rem 1.5rem;
+    font-size: 1rem;
+
+    border-radius: 7px;
+
+    font-family: Georgia, serif;
+    font-weight: bold;
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.submit-map-button {
+    background: #D6A84B;
+    border: none;
+    color: #101B35;
+}
+
+.submit-map-button:hover {
+    background: #F1DFAE;
+    transform: translateY(-2px);
+}
