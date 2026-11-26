@@ -34,3 +34,4 @@ INSERT INTO collectables (id_map, current_amount, max_amount, image, name) VALUE
 SELECT * FROM users;
 SELECT * FROM maps;
 SELECT * FROM collectables;
+show tables;

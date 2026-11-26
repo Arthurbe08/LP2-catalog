@@ -1,15 +1,11 @@
 
-// =============================
 // ELEMENTS
-// =============================
 
 const mapList = document.getElementById("user-map-list");
 const mapSearch = document.getElementById("map-search");
 
 
-// =============================
 // RENDER MAPS
-// =============================
 
 function renderMaps(mapArray) {
 

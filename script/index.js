@@ -48,16 +48,6 @@ function renderMaps(mapArray) {
 
         card.addEventListener("click", openMap);
 
-        card.addEventListener("keydown", (event) => {
-
-            if (event.key === "Enter" || event.key === " ") {
-                event.preventDefault();
-                openMap();
-            }
-
-        });
-
-
         // Username
 
         const username = document.createElement("p");

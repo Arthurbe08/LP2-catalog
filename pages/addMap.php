@@ -28,8 +28,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $error = "At least one challenge is required.";
     } elseif ($mainChallenge === null || !isset($challenges[$mainChallenge])) {
         $error = "Please select a main challenge.";
-    } elseif ($ratingInput !== "" && (!is_numeric($ratingInput) || $ratingInput < 0 || $ratingInput > 10)) {
-        $error = "Rating must be between 0 and 10.";
+    } elseif ($ratingInput !== "" && (!is_numeric($ratingInput) || $ratingInput < 0 || $ratingInput > 100)) {
+        $error = "Rating must be between 0 and 100.";
     } elseif ($durationInput !== "" && (!is_numeric($durationInput) || $durationInput < 0)) {
         $error = "Duration must be a non-negative number.";
     }
@@ -82,7 +82,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
             foreach ($collectables as $index => $collectable) {
 
-                $collectableName = trim($collectable["name"] ?? "");
+                $collectableName = ($collectable["name"] ?? "");
                 $currentAmount = (int) ($collectable["current_amount"] ?? 0);
                 $maxAmount = (int) ($collectable["max_amount"] ?? 0);
 
@@ -316,13 +316,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             Register a new map and track your completion progress.
         </p>
     </section>
-
-    <?php if ($error !== ""): ?>
-        <p class="form-error">
-            <?= htmlspecialchars($error, ENT_QUOTES, "UTF-8") ?>
-        </p>
-    <?php endif; ?>
-
+                
     <form
         id="map-form"
         action="addMap.php"

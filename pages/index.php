@@ -62,12 +62,12 @@ while ($row = $result->fetch_assoc()) {
 
     }
 
-    // Add collectables belonging to this map.
+    // Add collectables belonging to the map.
 
     if ($row["id_collectable"] !== null) {
 
         $maps[$mapId]["collectables"][] = [
-            "name" => $row["collectable_name"],
+            "name" => $row["collectable_name"], 
             "image" => $row["image"],
             "current_amount" => $row["current_amount"],
             "max_amount" => $row["max_amount"]
